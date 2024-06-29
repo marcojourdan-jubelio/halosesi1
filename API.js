@@ -51,7 +51,7 @@ fastify.post('/buku', async function (request, reply) {
     ]
   );
   reply
-    .code(201) //setting status code 201 (created)
+    .code(201)
     .send({ message: 'Data succesfully created!', data: buku
     });
 })
@@ -81,8 +81,6 @@ fastify.delete('/buku/:id', async function (request, reply) {
   reply
   .send({ message: 'Data succesfully deleted!', id: buku
   });
- // console.log(buku)
- // console.log(buku.length)
 }) 
 
 // Run the server!
